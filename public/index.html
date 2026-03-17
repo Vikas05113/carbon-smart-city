@@ -1,22 +1,26 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Carbon Calculator</title>
+    <title>Carbon Calculator</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-<h1>Carbon Emission Calculator</h1>
+<div class="container">
+    <h1>Carbon Emission Calculator</h1>
 
-<input type="number" id="vehicle" placeholder="Vehicle km">
+    <label for="vehicle">Vehicle km</label>
+    <input type="number" id="vehicle" placeholder="Enter km">
 
-<input type="number" id="electricity" placeholder="Electricity kWh">
+    <label for="electricity">Electricity kWh</label>
+    <input type="number" id="electricity" placeholder="Enter kWh">
 
-<button onclick="calculate()">Calculate</button>
+    <button onclick="calculate()">Calculate</button>
 
-<h2 id="result"></h2>
+    <h2 id="result"></h2>
+</div>
 
-<!-- VERY IMPORTANT -->
 <script src="script.js"></script>
 
 </body>
