@@ -1,8 +1,45 @@
+body{
+margin:0;
+overflow:hidden;
+font-family:Arial;
+color:rgb(233, 115, 115);
+text-align:center;
+}
+
+.earth{
+position:fixed;
+top:0;
+left:0;
+width:100%;
+height:100%;
+background:url("https://i.imgur.com/2RXY3Xk.jpg");
+background-size:cover;
+animation: rotateEarth 60s linear infinite;
+z-index:-1;
+}
+
+@keyframes rotateEarth{
+from{
+background-position:0 0;
+}
+to{
+background-position:10000px 0;
+}
+}
+
+h1{
+margin-top:100px;
+}
+
+input, button{
+padding:10px;
+margin:10px;
+}
 body {
     margin: 0;
     padding: 0;
     font-family: Arial, sans-serif;
-    background: #f4f4f4;
+    background: #948989;
 
     display: flex;
     justify-content: center;
